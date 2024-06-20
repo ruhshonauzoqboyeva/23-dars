@@ -1,0 +1,38 @@
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: grid;
+    place-content: center;
+    animation-name: carAnimate;
+    animation-duration: 10s;
+}
+.wrapper{
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+
+@keyframes carAnimate {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: green;
+        transform: translateX(400px);
+    }
+    50%{
+        background-color: violet;
+        transform: translate(400px,400px);
+    }
+    75%{
+        background-color: aqua;
+        transform: translate(0,400px);
+    }
+    100%{
+        background-color: red;
+        transform: translate(0,0);
+    }
+}
